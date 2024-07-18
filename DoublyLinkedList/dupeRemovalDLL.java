@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-class DoLL {
-    class Node {
+class DLL {
+    class node {
         node next, prev;
         int data;
 
-        public Node(int val) {
+        public node(int val) {
             this.data = val;
             this.next = null;
             this.prev = null;
@@ -14,7 +14,7 @@ class DoLL {
 
     node head, tail;
 
-    void DoLL() {
+    DLL() {
         head = null;
         tail = null;
     }
@@ -33,23 +33,6 @@ class DoLL {
         tail = newNode;
     }
 
-    public int[] minmax() {
-        node temp = head;
-        // node temp2 = temp.next;
-        int min = 10000, max = -1;
-        while (temp != null) {
-            if (temp.data < min) {
-                min = temp.data;
-            }
-            if (temp.data > max) {
-                max = temp.data;
-            }
-            temp = temp.next;
-        }
-        int value[] = { min, max };
-        return value;
-    }
-
     public void display() {
         node temp = head;
         while (temp != null) {
@@ -59,7 +42,7 @@ class DoLL {
     }
 }
 
-class minmaxDLL {
+class dupeRemovalDLL {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         DLL action = new DLL();
@@ -73,8 +56,6 @@ class minmaxDLL {
             action.insert(val);
         }
         action.display();
-
-        int values[] = action.minmax();
-        System.out.printf("\nMinimun is %d\nMaximum is %d\n", values[0], values[1]);
+        sc.close();
     }
 }
