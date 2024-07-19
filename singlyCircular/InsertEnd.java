@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class SCL {
+class SCLend {
     class node {
         node next;
         int data;
@@ -13,12 +13,12 @@ class SCL {
 
     node head, last;
 
-    SCL() {
+    SCLend() {
         head = null;
         last = null;
     }
 
-    public void insertBeg(int val) {
+    public void insertEnd(int val) {
         node newNode = new node(val);
 
         if (head == null) {
@@ -26,9 +26,9 @@ class SCL {
             head = newNode;
             last = newNode;
         } else {
-            newNode.next = head;
-            head = newNode;
             last.next = newNode;
+            newNode.next = head;
+            last = newNode;
         }
     }
 
@@ -41,17 +41,19 @@ class SCL {
     }
 }
 
-class singlyCircularIns {
+public class InsertEnd {
     public static void main(String[] args) {
-        SCL action = new SCL();
         Scanner sc = new Scanner(System.in);
+        SCLend action = new SCLend();
         int val = 0;
+
         while (true) {
             val = sc.nextInt();
             if (val == -1)
                 break;
-            action.insertBeg(val);
+            action.insertEnd(val);
         }
+
         action.display();
         sc.close();
     }
