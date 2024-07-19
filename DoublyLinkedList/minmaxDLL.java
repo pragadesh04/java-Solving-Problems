@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 class DoLL {
-    class Node {
+    class node {
         node next, prev;
         int data;
 
-        public Node(int val) {
+        public node(int val) {
             this.data = val;
             this.next = null;
             this.prev = null;
@@ -14,7 +14,7 @@ class DoLL {
 
     node head, tail;
 
-    void DoLL() {
+    DoLL() {
         head = null;
         tail = null;
     }
@@ -59,10 +59,10 @@ class DoLL {
     }
 }
 
-class minmaxDLL {
+class minmaxDoLL {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        DLL action = new DLL();
+        DoLL action = new DoLL();
 
         int val = 0;
         while (true) {
@@ -76,5 +76,6 @@ class minmaxDLL {
 
         int values[] = action.minmax();
         System.out.printf("\nMinimun is %d\nMaximum is %d\n", values[0], values[1]);
+        sc.close();
     }
 }
