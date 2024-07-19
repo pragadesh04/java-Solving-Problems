@@ -71,7 +71,7 @@ class insertPosi {
 
         action.display();
 
-        System.out.printf("\nEnter the position to insert\n");
+        System.out.printf("\n=======================================\nEnter the position to insert\n");
         int key = sc.nextInt();
         System.out.printf("Enter the value;\n");
         val = sc.nextInt();
