@@ -83,12 +83,12 @@ class deletePosi {
         System.out.printf("delete using?\n1 to position\n2 element\n\n==========================\n");
         int d = sc.nextInt();
         if (d == 1) {
-            System.out.printf("\n\nEnter position to delete\t");
+            System.out.printf("Enter position to delete\n");
             int key = sc.nextInt();
             action.deletePos(key);
             action.display();
         } else {
-            System.out.printf("\nEnter the element to delete: ");
+            System.out.printf("Enter the element to delete\n");
             val = sc.nextInt();
             action.deletePosElem(val);
             action.display();
