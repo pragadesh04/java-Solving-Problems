@@ -72,6 +72,8 @@ class deletePosi {
     public static void main(String[] args) {
         SCL action = new SCL();
         Scanner sc = new Scanner(System.in);
+        // Getting input
+
         int val = 0;
         while (true) {
             val = sc.nextInt();
@@ -80,16 +82,22 @@ class deletePosi {
             action.insertBeg(val);
         }
         action.display();
+
         System.out.printf("delete using?\n1 to position\n2 element\n\n==========================\n");
+        // Getting decision to choo whether to delete position or element;
+
         int d = sc.nextInt();
+
         if (d == 1) {
             System.out.printf("Enter position to delete\n");
             int key = sc.nextInt();
+            // calling Delete at position function
             action.deletePos(key);
             action.display();
         } else {
             System.out.printf("Enter the element to delete\n");
             val = sc.nextInt();
+            // Calling Delete an element function
             action.deletePosElem(val);
             action.display();
         }
