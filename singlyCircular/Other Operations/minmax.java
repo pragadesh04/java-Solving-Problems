@@ -18,7 +18,7 @@ class MinMax {
         last = null;
     }
 
-    public int[] MinMax() {
+    public int[] minMax() {
         node temp = head;
         // node temp2 = temp.next;
         int min = 10000, max = -1;
@@ -72,7 +72,7 @@ class minmax {
         }
         action.display();
         // System.out.printf("\nafter \n");
-        int[] value = action.MinMax();
+        int[] value = action.minMax();
         System.out.printf("\n\nMinimum is: %d\nMaximum is: %d", value[0], value[1]);
         // action.display();
         sc.close();
