@@ -54,5 +54,6 @@ class midElem {
         }
 
         action.middle(count / 2);
+        sc.close();
     }
 }
