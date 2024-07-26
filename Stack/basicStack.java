@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 class stack {
     private int maxsize, top = -1;
@@ -77,5 +78,6 @@ class basicStack {
         System.out.printf("After deletion");
         stack.pop();
         stack.display();
+        sc.close();
     }
 }
