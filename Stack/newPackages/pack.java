@@ -3,21 +3,40 @@ package newPackages;
 import java.util.Stack;
 
 public class pack {
-    public void display() {
-        System.out.print("Hello");
+    // ==================== reversing the infix String=========================
+    public String revInfix(String sequence) {
+        StringBuilder strR = new StringBuilder(sequence).reverse();
+
+        for (int i = 0; i < strR.length(); i++) {
+            char c = strR.charAt(i);
+            if (c == '(') {
+                strR.setCharAt(i, ')');
+            } else if (c == ')') {
+                strR.setCharAt(i, '(');
+            }
+        }
+        return strR.toString();
     }
 
+    // ==================== reversing the String=========================
+    public String revString(String sequence) {
+        StringBuilder str = new StringBuilder(sequence).reverse();
+        return str.toString();
+    }
+
+    public void display(String str) {
+        System.out.printf("\n%s", str);
+    }
+
+    // ==================Postfix to infix code is here:==================
     public boolean isOper(char c) {
         return c == '+' || c == '-' || c == '*' || c == '/' || c == '^';
     }
 
     public String postfixtoin(String postfix) {
         Stack<String> stack = new Stack<>();
-        // String post;
-
         for (int i = 0; i < postfix.length(); i++) {
             char c = postfix.charAt(i);
-
             if (!isOper(c)) {
                 stack.push(c + "");
             } else {
@@ -29,6 +48,8 @@ public class pack {
         }
         return stack.pop();
     }
+
+    // ==================infix to postfix code is here:==================
 
     public String infixtopost(String str) {
         // String str_new;
@@ -77,4 +98,7 @@ public class pack {
         }
         return -1;
     }
+
+    // ==================infix to prefix code is here:==================
+
 }
