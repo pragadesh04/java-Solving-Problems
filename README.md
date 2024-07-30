@@ -1,4 +1,4 @@
-<img src="https://c.tenor.com/GfSX-u7VGM4AAAAC/coding.gif" style="width: 200px; height: 200px; object-fit: cover; object-position: center;">
+<img src="https://c.tenor.com/GfSX-u7VGM4AAAAC/coding.gif" style="object-fit: cover; object-position: center;">
 
 ## java-Solving-Problems
 I am a student learning and practicing Java data structures 
