@@ -1,4 +1,4 @@
-<img align="center" src="https://c.tenor.com/GfSX-u7VGM4AAAAC/coding.gif">
+<img width="200px" height="100px" align="center" src="https://c.tenor.com/GfSX-u7VGM4AAAAC/coding.gif">
 
 
 ## java-Solving-Problems
