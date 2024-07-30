@@ -1,3 +1,6 @@
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeW5vMG1icXZ3czZnNndwd2NsM2RpaTljZzlvODV3YjQ1eGZjcTBqZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L1R1tvI9svkIWwpVYr/giphy.webp">
+
+
 ## java-Solving-Problems
 I am a student learning and practicing Java data structures 
 
