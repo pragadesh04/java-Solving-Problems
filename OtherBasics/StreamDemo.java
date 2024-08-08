@@ -1,7 +1,7 @@
 import java.util.*; 
-import java.util.stream.Collectors; // Import necessary packages
+import java.util.stream.Collectors;
 
-public class StreamDemo { // Renamed class to StreamDemo to avoid conflict with java.util.stream package
+public class StreamDemo {
 
     public static void main(String[] args) {
         // Initialize a list of Name objects
