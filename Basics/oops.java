@@ -75,15 +75,16 @@ class oops{
 
         int[][] arr = new int[num][num*2];
         
-        for(i=0;i <= num; i++){
+        for(int i=0;i <= num; i++){
             for(int j = 0; j <= num*2; j++){
                 arr[i][j]=i;
             }
         }
-        for(i=0;i <= num; i++){
+        for(int i=0;i <= num; i++){
             for(int j = 0; j <= num*2; j++){
                 System.out.printf("%d ",arr[i][j]);
             }
         }
+        sc.close();
     }
 }

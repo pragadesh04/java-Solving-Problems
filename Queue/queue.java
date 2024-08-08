@@ -18,5 +18,7 @@ class queue{
         System.out.print("\nqueue:\t" + queue);
         System.out.print("\nDequeue:\t" + queue.poll() + "\n" + queue);
         System.out.print("\nPeek element:\t" + queue.peek() + "\n" + queue);
+
+        sc.close();
     }
 }

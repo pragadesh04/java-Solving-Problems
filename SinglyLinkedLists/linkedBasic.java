@@ -41,7 +41,7 @@ class linkedBasic{
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        linkedBasic list = new linkedBsic();
+        linkedBasic list = new linkedBasic();
         
         int n = sc.nextInt(), arr [] = new int[n];
 

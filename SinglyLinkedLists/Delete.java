@@ -87,5 +87,7 @@ class Delete{
         int pos = sc.nextInt();
         del.deletePos(pos);
         del.display();
+
+        sc.close();
     }
 }
