@@ -17,5 +17,6 @@ class example {
 			System.out.printf("\n");
 		}
 		
+		sc.close();
 	}	
 }

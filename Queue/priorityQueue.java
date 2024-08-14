@@ -63,8 +63,9 @@ class priorityQueue{
             action.PQEnqueue(val,pri);
         }
         action.dis();
-        System.out.print("After Dequeue at begin:\n")
+        System.out.print("After Dequeue at begin:\n");
         action.PQDequeue();
         action.dis();
+        sc.close();
     }
 }

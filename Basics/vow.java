@@ -14,6 +14,8 @@ class vow {
         catch(Exception e){
             System.out.printf("Error:String does not contain vowels");
         }
+
+        sc.close();
     }
     public static void handle(long n,String str)throws Exception{
         char vow [] = {'a','e','i','o','u','A','E','I','O','U'};

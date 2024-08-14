@@ -19,7 +19,7 @@
 //     }
 // }
 import java.util.*;
-class main{
+class Main{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
@@ -36,5 +36,7 @@ class main{
             }
             System.out.printf("\n");
         }
+
+        sc.close();
     }
 }

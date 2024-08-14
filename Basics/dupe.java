@@ -15,6 +15,8 @@ class dupe {
         catch(Exception e){
             System.out.printf("Error: There is duplicate number: %d",value);
         }
+
+        sc.close();
     }
     public static void dupelicate(int[] array, int n)throws Exception{
         int val=0,vall = 0;

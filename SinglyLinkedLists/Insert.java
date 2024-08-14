@@ -84,5 +84,7 @@ class Insert {
         n = sc.nextInt(); val=sc.nextInt();
         ins.insertPos(n, val);
         ins.display();
+
+        sc.close();
     }
 }
